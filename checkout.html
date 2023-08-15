@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SquareEyes / Home</title>
+    <meta
+      name="description"
+      content="Securely complete your purchase and finalize your order with our easy-to-use checkout process. Enjoy a seamless and hassle-free shopping experience with multiple payment options, fast shipping, and excellent customer support. Shop now and make your payment with confidence."
+    />
+    <link href="CSS/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="./images/logo.png" alt="SquareEyes Logo" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="search.html" class="active">Search</a></li>
+          <li><a href="selection.html" class="active">Our Selection</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="checkout-top">
+      <h1>SHOPPING CART</h1>
+      <h1>PAYMENT INFO</h1>
+    </div>
+    <div class="checkout-header">
+      <h3>PRODUCT</h3>
+      <h3>TOTAL PRICE</h3>
+      <h3>CREDIT CARD</h3>
+      <h3>PAY PAL</h3>
+    </div>
+    <div class="checkout-container">
+      <div class="image-container">
+        <img
+          class="check-skin"
+          src="./images/skinamarink.png"
+          alt="check-out skinamarink"
+        />
+
+        <a href="lobster.html">
+          <img
+            class="check-lob"
+            src="./images/lobster.png"
+            alt="Lobster Image"
+          />
+        </a>
+      </div>
+
+      <div class="checkout-prices">
+        <h3>€7,99</h3>
+        <h3>€7,99</h3>
+        <h3>SUBTOTAL €15,98</h3>
+        <h3>SHIPPING FREE</h3>
+        <h3><a href="selection.html">CONTINUE SHOPPING</a></h3>
+      </div>
+
+      <form>
+        <fieldset>
+          <h3><label for="name">Name on Card</label></h3>
+
+          <input type="text" id="name" name="cardname" placeholder="Name"" >
+
+          <h3><label for="ccn">Card number</label></h3>
+          <input
+            type="text"
+            id="ccn"
+            name="cardnumber"
+            placeholder="1234"
+            class="form__input"
+          />
+
+          <h3><label for="expmonth">Expiry Date</label></h3>
+          <input
+            type="text"
+            id="expmonth"
+            name="expmonth"
+            placeholder="MONTH"
+            class="form__input"
+          />
+
+          <h3><label for="expireYY">Expiry Date</label></h3>
+          <input
+            type="text"
+            id="expireYY"
+            name="expireYY"
+            placeholder="YEAR"
+            class="form__input"
+          />
+
+          <h3><label for="cvv">Security Code</label></h3>
+          <input
+            type="text"
+            id="cvv"
+            name="cvv"
+            placeholder="123"
+            class="form__input"
+          />
+
+          <h3><label for="zip">Zip Code</label></h3>
+          <input
+            type="text"
+            id="zip"
+            name="zip"
+            placeholder="10001"
+            class="form__input"
+          />
+        </fieldset>
+        <h3>
+          <input type="checkbox" id="scales" name="scales" checked />
+          <label for="scales">TERMS AND CONDITIONS</label>
+        </h3>
+      </form>
+    </div>
+    <a href="success.html">
+      <button class="agree">
+        <h3>AGREE AND CONTINUE</h3>
+      </button>
+    </a>
+
+    <div class="long-content"></div>
+    <footer>
+      <div class="footer-text"><h1>2023 SQUARE EYES LIMITED</h1></div>
+      <div class="footer-icons">
+        <img src="./images/ri_facebook-box-fill.svg" alt="facebook" />
+        <img src="./images/ri_instagram-fill.svg" alt="Instagram" />
+        <img src="./images/ri_twitter-fill.svg" alt="twitter" />
+        <img src="./images/ri_youtube-fill.svg" alt="youtube" />
+      </div>
+    </footer>
+  </body>
+</html>

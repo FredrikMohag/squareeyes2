@@ -1,0 +1,284 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url(/BebasNeue-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Barlow;
+  src: url(/BarlowCondensed-Thin.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+ul {
+  font-family: BebasNeue;
+}
+p {
+  font-family: Barlow;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(235, 235, 224),
+    rgba(32, 189, 142)
+  );
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/*Logo*/
+.logo img {
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 131px;
+  height: 62px;
+}
+/*Menu*/
+nav {
+  position: fixed;
+  margin-top: 150px;
+  font-size: 32px;
+}
+ul {
+  padding-left: 0;
+  flex-direction: column;
+}
+nav ul li {
+  margin-bottom: 25px;
+  margin-left: 20px;
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/*HomePage*/
+.menu-special {
+  padding: 10px;
+  display: flex;
+}
+
+.menu-special ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-special ul li {
+  margin-left: 280px;
+}
+
+.menu-special ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.index-image {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 300px;
+  width: 800px;
+  height: 500px;
+}
+.square-presents {
+  margin-left: 300px;
+}
+.long-content {
+  padding: 280px;
+}
+
+/*About*/
+.about-text {
+  position: absolute;
+  width: 307px;
+  height: 380px;
+  padding: 15px;
+  top: 15%;
+  left: 20%;
+}
+.about-img {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 630px;
+  width: 550px;
+  height: 380px;
+}
+.about {
+  display: flex;
+  margin-left: 630px;
+  margin-top: 70px;
+}
+/*contact*/
+.contactimg {
+  width: 700px;
+  height: 450px;
+}
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+
+  margin-left: 300px;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+.contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+/*Selection*/
+.ourselection {
+  display: flex;
+  margin-left: 300px;
+  margin-top: 150px;
+}
+.topselection {
+  display: flex;
+  margin-left: 300px;
+}
+
+.lobster {
+  width: 240px;
+  height: 340px;
+}
+.skinamarink {
+  width: 240px;
+  height: 340px;
+}
+.seventh {
+  width: 240px;
+  height: 340px;
+}
+.virgin {
+  width: 240px;
+  height: 340px;
+}
+/*The Lobster*/
+.movielob {
+  display: flex;
+  width: 920px;
+  height: 470px;
+  margin-left: 300px;
+}
+.lobster-content {
+  display: flex;
+  margin-left: 300px;
+}
+.checkout-icon {
+  width: 100px;
+  height: 50px;
+  margin-left: 1138px;
+}
+.lobster-info {
+  display: flex;
+  margin-left: 300px;
+}
+.lobster-plot {
+  display: flex;
+  margin-left: 300px;
+  width: 400px;
+  height: 380px;
+}
+/*check-out*/
+.checkout-top {
+  display: flex;
+}
+.checkout-top h1 {
+  flex-direction: row;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.check-skin {
+  width: 102px;
+  height: 144px;
+}
+.check-lob {
+  width: 102px;
+  height: 144px;
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 400px;
+  margin-right: 200px;
+}
+
+.checkout-container {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 400px;
+  margin-right: 340px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.checkout-prices h3 {
+  padding: 20px;
+}
+.agree {
+  display: flex;
+  margin-left: 920px;
+}
+
+/*Success*/
+.success {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin-left: 525px;
+  margin-top: 130px;
+}
+.thanks {
+  display: flex;
+  margin-left: 580px;
+}
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #53c9a3, #ebebe0);
+  color: black;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+
+.footer-text {
+  font-size: 8px;
+}

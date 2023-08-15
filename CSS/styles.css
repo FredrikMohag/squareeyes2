@@ -314,3 +314,32 @@ footer {
 .footer-text {
   font-size: 8px;
 }
+/* Media query*/
+
+@media (max-width: 768px) {
+  body {
+    background-image: linear-gradient(
+      to right,
+      rgba(235, 235, 224),
+      rgba(32, 189, 142)
+    );
+  }
+
+  .logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+  }
+
+  nav {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-special ul li {
+    margin-left: 10px;
+  }
+}

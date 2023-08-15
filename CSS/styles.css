@@ -101,56 +101,68 @@ nav ul li a {
 }
 
 /*About*/
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px;
+  margin: auto;
+}
 .about-text {
-  position: absolute;
+  display: flex;
   width: 307px;
   height: 380px;
-  padding: 15px;
-  top: 15%;
-  left: 20%;
 }
 .about-img {
   display: flex;
-  margin-top: 20px;
-  margin-left: 630px;
+
   width: 550px;
   height: 380px;
 }
 .about {
   display: flex;
-  margin-left: 630px;
-  margin-top: 70px;
+  position: absolute;
+  top: 130px;
+  left: 610px;
 }
 /*contact*/
 .contactimg {
+  display: flex;
   width: 700px;
   height: 450px;
+  margin: 20px;
 }
 .contact-container {
   display: flex;
   max-width: 1200px;
-  align-items: flex-start;
-  justify-content: space-between;
   flex-direction: row;
-
-  margin-left: 300px;
-  margin-top: 100px;
-  margin-right: 100px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 100px;
+  margin: auto;
 }
-.contact {
+.contact p {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
 }
+
 /*Selection*/
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
 .ourselection {
   display: flex;
-  margin-left: 300px;
-  margin-top: 150px;
-}
-.topselection {
-  display: flex;
-  margin-left: 300px;
+  width: 80%;
 }
 
 .lobster {
@@ -172,21 +184,39 @@ nav ul li a {
 /*The Lobster*/
 .movielob {
   display: flex;
+  margin-top: 80px;
   width: 920px;
   height: 470px;
   margin-left: 300px;
 }
 .lobster-content {
   display: flex;
-  margin-left: 300px;
+
+  position: absolute;
+
+  margin-top: 90px;
+  margin-left: 320px;
+}
+.lobster-content2 {
+  display: flex;
+
+  position: absolute;
+
+  margin-top: 110px;
+  margin-left: 320px;
 }
 .checkout-icon {
+  display: flex;
+  position: absolute;
+
   width: 100px;
   height: 50px;
-  margin-left: 1138px;
+  margin-top: 500px;
+  margin-left: 1120px;
 }
 .lobster-info {
   display: flex;
+
   margin-left: 300px;
 }
 .lobster-plot {
@@ -244,17 +274,19 @@ nav ul li a {
 }
 
 /*Success*/
-.success {
+.success-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 100px;
+}
+.success {
   width: 400px;
   height: 400px;
-  margin-left: 525px;
-  margin-top: 130px;
 }
-.thanks {
-  display: flex;
-  margin-left: 580px;
-}
+
 /*Footer*/
 footer {
   display: flex;

@@ -37,7 +37,7 @@ body {
 }
 /*Logo*/
 .logo img {
-  position: fixed;
+  position: absolute;
   margin-top: 20px;
   margin-left: 20px;
   width: 131px;

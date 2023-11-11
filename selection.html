@@ -12,6 +12,7 @@
     <link href="CSS/styles.css" rel="stylesheet" />
   </head>
   <body>
+    <div id="loading-indicator" style="display: none">Loading...</div>
     <header>
       <a href="index.html" class="logo">
         <img src="./images/logo.png" alt="SquareEyes Logo" />
@@ -28,23 +29,7 @@
     </header>
     <div class="selection-container">
       <h1 class="ourselection">Our top selection</h1>
-      <div class="topselection">
-        <a href="lobster.html"
-          ><img class="lobster" src="./images/lobster.png" alt="Lobster Movie"
-        /></a>
-        <a href="skinamarink.html"
-          ><img
-            class="skinamarink"
-            src="./images/skinamarink.png"
-            alt="Skinamarink Movie"
-        /></a>
-        <a href="seventh.html"
-          ><img class="seventh" src="./images/seventh.png" alt="Seventh Movie"
-        /></a>
-        <a href="virgin.html"
-          ><img class="virgin" src="./images/virgin.png" alt="Virgin Movie"
-        /></a>
-      </div>
+      <div class="topselection"></div>
     </div>
     <footer>
       <div class="footer-text"><h1>2023 SQUARE EYES LIMITED</h1></div>
@@ -55,5 +40,6 @@
         <img src="./images/ri_youtube-fill.svg" alt="youtube" />
       </div>
     </footer>
+    <script src="api-handler.js"></script>
   </body>
 </html>

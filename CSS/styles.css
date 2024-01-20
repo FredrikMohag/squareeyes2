@@ -1,23 +1,16 @@
-@font-face {
-  font-family: BebasNeue;
-  src: url(/BebasNeue-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: Barlow;
-  src: url(/BarlowCondensed-Thin.ttf) format("truetype");
-}
-
 h1,
 h2,
-h3,
 h4,
 ul {
   font-family: BebasNeue;
+  font-size: 28px;
+}
+h3 {
+  font-size: 10px;
 }
 p {
   font-family: Barlow;
-  font-size: 24px;
-  font-weight: bolder;
+  font-size: 18px;
 }
 
 body {
@@ -32,7 +25,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 /*Logo*/
@@ -46,15 +38,15 @@ body {
 /*Menu*/
 nav {
   position: fixed;
-  margin-top: 150px;
-  font-size: 32px;
+  margin-top: 100px;
+  font-size: 33px;
 }
 ul {
   padding-left: 0;
   flex-direction: column;
 }
 nav ul li {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   margin-left: 20px;
   list-style: none;
 }
@@ -62,59 +54,32 @@ nav ul li a {
   color: black;
   text-decoration: none;
 }
-
+a:hover {
+  color: rgba(32, 189, 142);
+}
 /*HomePage*/
-.menu-special {
-  padding: 10px;
-  display: flex;
-}
-
-.menu-special ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-special ul li {
-  margin-left: 280px;
-}
-
-.menu-special ul li a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  padding: 5px 10px;
-}
 
 .index-image {
-  display: flex;
-  margin-top: 80px;
-  margin-left: 300px;
-  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
   height: 500px;
-}
-.square-presents {
-  margin-left: 300px;
-}
-.long-content {
-  padding: 280px;
+  max-width: 100%;
 }
 
 /*About*/
 .about-container {
   display: flex;
-  max-width: 1200px;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  padding: 16px;
-  margin: auto;
+  margin-left: 250px;
+  margin-top: 130px;
 }
 .about-text {
-  display: flex;
-  width: 307px;
-  height: 380px;
+  margin-top: -1px;
+  font-size: 18px;
+  width: 300px;
+  height: 300px;
 }
 .about-img {
   display: flex;
@@ -125,29 +90,22 @@ nav ul li a {
 .about {
   display: flex;
   position: absolute;
-  top: 130px;
-  left: 610px;
+  top: 120px;
+  left: 560px;
 }
 /*contact*/
 .contactimg {
   display: flex;
-  width: 700px;
-  height: 450px;
+  width: 500px;
+  height: 350px;
   margin: 20px;
 }
+
 .contact-container {
   display: flex;
-  max-width: 1200px;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  padding: 100px;
-  margin: auto;
-}
-.contact p {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 100px;
 }
 
 /*Selection*/
@@ -168,48 +126,30 @@ nav ul li a {
   width: 240px;
   height: 340px;
 }
-.skinamarink {
-  width: 240px;
-  height: 340px;
-}
-.seventh {
-  width: 240px;
-  height: 340px;
-}
-.virgin {
-  width: 240px;
-  height: 340px;
-}
+
 /*The Lobster*/
 .movielob {
   display: flex;
-  width: 500px;
-  height: 750px;
+  width: 400px;
+  height: 550px;
   margin-top: 80px;
   margin-left: 300px;
 }
 .lobster-content {
   display: flex;
-  color: #ffffff;
+  color: black;
+  font-size: 42px;
   position: absolute;
-  margin-top: 90px;
-  margin-left: 320px;
-}
-.lobster-content2 {
-  display: flex;
-
-  position: absolute;
-
-  margin-top: 110px;
-  margin-left: 320px;
+  margin-top: 70px;
+  margin-left: 750px;
 }
 .checkout-icon {
   display: flex;
   position: absolute;
   width: 100px;
   height: 50px;
-  margin-top: 780px;
-  margin-left: 700px;
+  margin-top: 420px;
+  margin-left: 750px;
 }
 .lobster-info {
   display: flex;
@@ -217,25 +157,25 @@ nav ul li a {
   margin-left: 300px;
 }
 .lobster-plot {
-  display: flex;
-  margin-left: 300px;
-  width: 400px;
-  height: 380px;
+  margin-top: -800px;
+  margin-left: 750px;
+  width: 330px;
+  height: 400px;
 }
 /*check-out*/
 .checkout-top {
   display: flex;
-}
-.checkout-top h1 {
-  flex-direction: row;
-  margin-left: 400px;
+  flex-direction: column;
   margin-top: 100px;
+  margin-left: 230px;
+}
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 30px;
 }
 
-.check-skin {
-  width: 102px;
-  height: 144px;
-}
 .check-lob {
   width: 102px;
   height: 144px;
@@ -243,41 +183,17 @@ nav ul li a {
 
 .checkout-header {
   display: flex;
-  justify-content: space-between;
-  margin-left: 400px;
-  margin-right: 200px;
-}
-
-.checkout-container {
-  display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-left: 400px;
-  margin-right: 340px;
-}
-
-.image-container {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
-.checkout-prices h3 {
-  padding: 20px;
-}
-.agree {
-  display: flex;
-  margin-left: 920px;
+  margin-left: 230px;
+  margin-top: -170px;
 }
 
 /*Success*/
 .success-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  padding: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .success {
   width: 400px;
@@ -311,32 +227,191 @@ footer {
 .footer-text {
   font-size: 8px;
 }
+.long-content {
+  height: 1500px;
+}
 /* Media query*/
-
 @media (max-width: 768px) {
-  body {
-    background-image: linear-gradient(
-      to right,
-      rgba(235, 235, 224),
-      rgba(32, 189, 142)
-    );
+  .html,
+  .body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  ul {
+    font-size: 8px;
+  }
+  ul {
+    font-size: 10px;
+  }
+  p {
+    font-size: 8px;
+  }
+  .index-image {
+    width: 250px;
+    height: 150px;
+    margin-top: -300px;
+  }
+  nav {
+    position: fixed;
+    font-size: 10px; /* Adjust font size for smaller screens if needed */
+    margin-left: -12px;
+    margin-top: 50px;
   }
 
+  nav ul li {
+    margin-bottom: 15px; /* Adjust bottom margin for spacing between list items in column layout */
+    margin-right: 0; /* Remove right margin in column layout */
+  }
   .logo img {
+    position: absolute;
     margin-top: 10px;
     margin-left: 10px;
+    width: 65px;
+    height: 31px;
+  }
+  /*Selection*/
+  .ourselection {
+    display: flex;
+    font-size: 12px;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  .topselection {
+    margin-left: -100px;
+    margin-top: -50px;
+  }
+  .lobster {
     width: 100px;
-    height: auto;
+    height: 120px;
+  }
+  /*Footer*/
+  .footer-icons {
+    display: flex;
+    align-items: center;
   }
 
-  nav {
-    margin-top: 20px;
-    font-size: 24px;
+  .footer-icons img {
+    width: 10px;
+    height: 10px;
   }
-}
 
-@media (max-width: 480px) {
-  .menu-special ul li {
-    margin-left: 10px;
+  .footer-text {
+    font-size: 3px;
+  }
+  .movies {
+    width: 100px;
+    height: 120px;
+  }
+
+  /*The Lobster*/
+  .movielob {
+    display: flex;
+    width: 120px;
+    height: 160px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .lobster-content {
+    display: flex;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 230px;
+  }
+  .checkout-icon {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    margin-top: 195px;
+    margin-left: 230px;
+  }
+  .lobster-info {
+    display: flex;
+    font-size: 10px;
+    margin-left: 100px;
+  }
+  .lobster-plot {
+    margin-top: -300px;
+    margin-left: 230px;
+    font-size: 10px;
+    width: 150px;
+    height: 40px;
+  }
+  /*About*/
+  .about-container {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+  .about-text {
+    margin-top: -1px;
+    font-size: 8px;
+    width: 100px;
+    height: 20px;
+  }
+  .about-img {
+    display: flex;
+
+    width: 190px;
+    height: 150px;
+  }
+  .about {
+    display: flex;
+    position: absolute;
+    font-size: 10px;
+    top: 55px;
+    left: 185px;
+  }
+  /*contact*/
+  .contactimg {
+    width: 190px;
+    height: 150px;
+  }
+
+  .contact-container {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+  /*check-out*/
+  .checkout-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .checkout-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 27px;
+  }
+
+  .checkout-header {
+    display: flex;
+    flex-direction: column;
+    margin-left: -130px;
+    margin-top: 40px;
+  }
+  /*Success*/
+  .success-container {
+    margin-top: -250px;
+    margin-left: 30px;
+  }
+  .thanks {
+    margin-left: 30px;
+  }
+  .success {
+    width: 200px;
+    height: 200px;
   }
 }

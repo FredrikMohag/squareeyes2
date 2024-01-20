@@ -38,23 +38,23 @@ async function getMovies() {
 
     // Updates additional movie information on the page
     infoDiv.innerHTML = `<div>
-      <h2 class="lobster-info">RATING</h2>
+      <p class="lobster-info">RATING</p>
       <p class="lobster-info">${results.rating}</p>
     </div>
     <div>
-      <h2 class="lobster-info">RELEASED</h2>
+      <p class="lobster-info">RELEASED</p>
       <p class="lobster-info">${results.released}</p>
     </div>
     <div>
-      <h2 class="lobster-info">PRICE</h2>
+      <p class="lobster-info">PRICE</p>
       <p class="lobster-info">${results.price}</p>
     </div>
     <div>
-      <h2 class="lobster-info">GENRE</h2>
+      <p class="lobster-info">GENRE</p>
       <p class="lobster-info">${results.genre}</p>
     </div>
     <div>
-      <h2 class="lobster-info">DESCRIPTION</h2>
+      
       <p class="lobster-plot">${results.description}"</p>
     </div>`;
 

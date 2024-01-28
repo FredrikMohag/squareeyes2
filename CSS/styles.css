@@ -243,13 +243,13 @@ footer {
 }
 
 .cloths-item h2 {
-  margin-top: 0; /* remove top margin from the title */
-  margin-bottom: 10px; /* space below the title */
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .cloths-item p {
-  margin-top: 0; /* remove top margin from paragraphs */
-  margin-bottom: 10px; /* space below each paragraph */
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .item-image img {

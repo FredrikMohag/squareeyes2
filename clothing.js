@@ -1,52 +1,60 @@
-// API URL for fetching the list of top movies
+// API URL for fetching the list of top clothing
 const apiUrl = "https://www.haakansson.no/wp-json/wc/store/products";
 
-// Selects the element where the top movie selection will be displayed
+// Selects the element where the top clothing selection will be displayed
 const topClothing = document.querySelector(".topclothing");
 
-// Displays a loading indicator while fetching the list of top movies
+// Displays a loading indicator while fetching the list of top clothing
 const loadingIndicatorClothing = document.getElementById("loading-indicator");
 
-// Asynchronous function to fetch and display the list of top movies
+// Asynchronous function to fetch and display the list of top clothing
 async function getTopClothing() {
   try {
-    // Displays the loading indicator before making the API call
     loadingIndicatorClothing.style.display = "block";
 
-    // Fetches the list of top movies from the API
     const response = await fetch(apiUrl);
 
-    // Checks if the API response is successful (HTTP status code 2xx)
     if (!response.ok) {
-      // Throws an error if the API response is not successful
       throw new Error(
-        "Failed to fetch top clothing. Network response was not ok"
+        "Oops! We're having trouble reaching our servers. Please try again later."
       );
     }
 
-    // Parses the JSON response
-    const results = await response.json();
+    const clothing = await response.json();
 
-    // Extracts the list of movies from the API response
-    const clothing = results;
+    // Clear the existing content
+    topClothing.textContent = "";
 
-    // Clears existing content
-    topClothing.innerHTML = "";
+    // Loop through each clothing item and create elements
+    clothing.forEach((item) => {
+      const link = document.createElement("a");
+      link.href = `clothing.html?id=${item.id}`;
 
-    // Loop through each clothing item and create an element
-    for (let i = 0; i < clothing.length; i++) {
-      topClothing.innerHTML += `<a href="clothing.html?id=${clothing[i].id}"
-        ><img class="clothing" src="${clothing[i].images[0].src}" alt="${clothing[i].name}"
-     /></a>`;
-    }
+      const img = document.createElement("img");
+      img.src = item.images[0].src;
+      img.alt = item.name;
+      img.classList.add("clothing");
+
+      link.appendChild(img);
+      topClothing.appendChild(link);
+    });
   } catch (error) {
-    // Logs an error message if there is an issue fetching the list of top movies
-    console.error("Error fetching top clothing:", error.message);
+    console.error("Error fetching top clothing:", error);
+    topClothing.textContent = "";
+
+    const errorMessage = document.createElement("p");
+    errorMessage.textContent = error.message;
+
+    const retryButton = document.createElement("button");
+    retryButton.textContent = "Try Again";
+    retryButton.onclick = getTopClothing;
+
+    topClothing.appendChild(errorMessage);
+    topClothing.appendChild(retryButton);
   } finally {
-    // Hides the loading indicator regardless of success or failure
     loadingIndicatorClothing.style.display = "none";
   }
 }
 
-// Calls the function to fetch and display the list of top movies when the page loads
+// Calls the function to fetch and display the list of top clothing when the page loads
 getTopClothing();

@@ -11,40 +11,66 @@ const itemsDiv = document.querySelector(".cloths-content");
 // Asynchronous function to fetch and display items
 async function getCloths() {
   try {
-    // Fetches data from the API
     const response = await fetch(url);
 
-    // Checks if the response is successful (HTTP status code 2xx)
     if (!response.ok) {
-      // Throws an error if the response is not successful
-      throw new Error("Failed to fetch data. Network response was not ok");
+      throw new Error(
+        `Oops! We're having trouble reaching our servers. Please try again later.`
+      );
     }
 
-    // Parses the JSON response
-    const items = await response.json();
+    let items;
+    try {
+      items = await response.json();
+    } catch (e) {
+      throw new Error(
+        "We're having trouble processing the information. Please try again."
+      );
+    }
 
     // Clear the existing content
-    itemsDiv.innerHTML = "";
+    itemsDiv.textContent = "";
 
-    // Iterates over each item and appends it to the itemsDiv
     items.forEach((item) => {
-      itemsDiv.innerHTML += `
-        <div class="cloths-item">
-          <h2>${item.name}</h2>
-          <p>${item.description}</p>
-          <div class="item-image">
-      <img src="${item.images[0].src}" alt="${item.name}">
-    </div>
-          <p>Price: ${item.prices.price}</p>
-        </div>
-      `;
+      const itemDiv = document.createElement("div");
+      itemDiv.className = "cloths-item";
+
+      const title = document.createElement("h2");
+      title.textContent = item.name;
+      itemDiv.appendChild(title);
+
+      const description = document.createElement("p");
+      description.textContent = item.description;
+      itemDiv.appendChild(description);
+
+      const imageDiv = document.createElement("div");
+      imageDiv.className = "item-image";
+      const image = document.createElement("img");
+      image.src = item.images[0].src;
+      image.alt = item.name;
+      imageDiv.appendChild(image);
+      itemDiv.appendChild(imageDiv);
+
+      const price = document.createElement("p");
+      price.textContent = `Price: ${item.prices.price}`;
+      itemDiv.appendChild(price);
+
+      itemsDiv.appendChild(itemDiv);
     });
   } catch (error) {
-    // Logs an error message if there is an issue fetching data
-    console.error("Error fetching data:", error.message);
-    itemsDiv.innerHTML = `<p>Error fetching data: ${error.message}</p>`;
+    console.error("Error fetching data:", error);
+    itemsDiv.textContent = "";
+
+    const errorMessage = document.createElement("p");
+    errorMessage.textContent = error.message;
+
+    const retryButton = document.createElement("button");
+    retryButton.textContent = "Try Again";
+    retryButton.onclick = getCloths;
+
+    itemsDiv.appendChild(errorMessage);
+    itemsDiv.appendChild(retryButton);
   } finally {
-    // Hides the loading indicator regardless of success or failure
     loadingIndicator.style.display = "none";
   }
 }

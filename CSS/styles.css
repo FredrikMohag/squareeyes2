@@ -230,6 +230,34 @@ footer {
 .long-content {
   height: 1500px;
 }
+
+.clothing {
+  display: flex;
+  width: 200px;
+  height: 230px;
+  margin: 0px 500px 5px;
+}
+.cloths-item {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.cloths-item h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cloths-item p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.item-image img {
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 /* Media query*/
 @media (max-width: 768px) {
   .html,

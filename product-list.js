@@ -43,7 +43,9 @@ async function getTopProducts() {
   } catch (error) {
     console.error("Error fetching top products:", error.message);
   } finally {
-    loadingIndicatorTopSelection.style.display = "none";
+    setTimeout(() => {
+      loadingIndicatorTopSelection.style.display = "none";
+    }, 50);
   }
 }
 

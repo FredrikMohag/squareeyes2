@@ -1,11 +1,11 @@
-Cross-course project
+## Cross-course project
 
-Description:
+### Description:
 
 For this assignment, I chose to develop a captivating movie website called "Square Eyes." It's a virtual hub where movie enthusiasts can dive into the world of cinema. Throughout my first year, I dedicated time and effort to refining this project, using a mix of HTML, JavaScript, CSS, APIs, and WordPress. My goal was to create an engaging platform that not only demonstrates my technical abilities but also reflects my love for movies.
 
 
-Site architecture:
+### Site architecture:
 
 Home
 
@@ -25,7 +25,7 @@ Contact
 
 
 
-Built with:
+### Built with:
 
 HTML
 CSS
@@ -34,25 +34,25 @@ WP
 API
 
 
-Getting Started:
+### Getting Started:
 
 Visit the website: https://shiny-pony-a64ce5.netlify.app/
 
 
-Installing
+### Installing
 
 Clone the repo:
 
 git clone: https://github.com/FredrikMohag/squareeyes2
 
-Running
+### Running
 
 Clone the repo, open in VSCode. Right click on the index.html and open in Live Server.
 
-Contributing
+### Contributing
 
 If you want to contribute, I would appreciate it if you open a pull request, so that the code can be reviewed.
 
-Contact:
+### Contact:
 
 fredrik.mhakansson@gmail.com

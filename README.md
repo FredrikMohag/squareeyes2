@@ -24,17 +24,13 @@ About
 Contact
 
 
+
 Built with:
 
-
 HTML
-
 CSS
-
 JS
-
 WP
-
 API
 
 
